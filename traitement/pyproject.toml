@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "k8s-examples"
+version = "0.1.0"
+description = "k8s examples python project"
+authors = [
+  { name="Alex V Caron", email="alex.valcourt.caron@usherbrooke.ca" }
+]
+requires-python = ">=3.10"
+
+[project.scripts]
+traitement-A = "servers.traitementA:main"
+traitement-B = "servers.traitementB:main"
